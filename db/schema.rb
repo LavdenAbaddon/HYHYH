@@ -10,7 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_22_005656) do
+ActiveRecord::Schema.define(version: 2018_10_23_201625) do
+
+  create_table "playlists", force: :cascade do |t|
+    t.integer "room_id"
+    t.string "link_1"
+    t.string "link_2"
+    t.string "link_3"
+    t.string "link_4"
+    t.string "link_5"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rooms", force: :cascade do |t|
+    t.integer "admin_1"
+    t.integer "admin_2"
+    t.integer "host_id"
+    t.string "room_name", limit: 40
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
