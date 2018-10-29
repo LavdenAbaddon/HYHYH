@@ -1,3 +1,5 @@
+# README
+
 # HYHYH
 
 ## Project Vision
@@ -34,6 +36,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+<<<<<<< HEAD
+=======
 
 ## Team Members
 
@@ -52,3 +56,4 @@ Yulin Ou [@Lavden](https://github.com/Lavden)
 Yichen Zhou [@sOsBiggestFan](https://github.com/sOsBiggestFan)
 
 <img src="./pics/yichen.jpg" width="250">
+>>>>>>> 3003dd07fd84f31fc5e36b823c5aa1d321a61787

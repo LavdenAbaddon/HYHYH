@@ -10,10 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_23_201625) do
+ActiveRecord::Schema.define(version: 2018_10_23_140028) do
 
-  create_table "playlists", force: :cascade do |t|
-    t.integer "room_id"
+  create_table "rooms", force: :cascade do |t|
+    t.integer "admin_1"
+    t.integer "admin_2"
+    t.integer "host_id"
+    t.string "room_name"
     t.string "link_1"
     t.string "link_2"
     t.string "link_3"
@@ -23,13 +26,12 @@ ActiveRecord::Schema.define(version: 2018_10_23_201625) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "rooms", force: :cascade do |t|
-    t.integer "admin_1"
-    t.integer "admin_2"
-    t.integer "host_id"
-    t.string "room_name", limit: 40
+  create_table "messages", force: :cascade do |t|
+    t.text "content"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_messages_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

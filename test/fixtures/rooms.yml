@@ -5,9 +5,19 @@ one:
   admin_2: 1
   host_id: 1
   room_name: MyString
+  link_1: MyString
+  link_2: MyString
+  link_3: MyString
+  link_4: MyString
+  link_5: MyString
 
 two:
   admin_1: 1
   admin_2: 1
   host_id: 1
   room_name: MyString
+  link_1: MyString
+  link_2: MyString
+  link_3: MyString
+  link_4: MyString
+  link_5: MyString

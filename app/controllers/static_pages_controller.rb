@@ -4,4 +4,8 @@ class StaticPagesController < ApplicationController
 
   def lobby
   end
+  
+  def video_room
+    @room = Room.find(params[:id])
+  end
 end
