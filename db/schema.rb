@@ -10,15 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_30_214109) do
-
-  create_table "messages", force: :cascade do |t|
-    t.text "content"
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_messages_on_user_id"
-  end
+ActiveRecord::Schema.define(version: 2018_10_30_215344) do
 
   create_table "rooms", force: :cascade do |t|
     t.integer "admin_1"
